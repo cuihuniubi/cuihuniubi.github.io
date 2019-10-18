@@ -8,7 +8,7 @@
 
 
 
-<title>Hello World | Hexo</title>
+<title>Github博客搭建全过程 | Hexo</title>
 
 
 
@@ -170,7 +170,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Hello World</h1>
+            <h1 class="post-title">Github博客搭建全过程</h1>
             
                 <div class="post-meta">
                     
@@ -179,7 +179,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">October 18, 2019&nbsp;&nbsp;15:07:54</a>
+                        Date: <a href="#">October 18, 2019&nbsp;&nbsp;15:30:36</a>
                         </span>
                     
                     
@@ -188,19 +188,81 @@
         </header>
 
         <div class="post-content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h1 id="Github个人技术博客搭建步骤"><a href="#Github个人技术博客搭建步骤" class="headerlink" title="Github个人技术博客搭建步骤"></a>Github个人技术博客搭建步骤</h1><h3 id="一、前期准备"><a href="#一、前期准备" class="headerlink" title="一、前期准备"></a>一、前期准备</h3><p> 1、GitHub账号</p>
+<p>注册地址：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>2、Node.js环境</p>
+<p>下载地址：<a href="https://nodejs.org/download/" target="_blank" rel="noopener">https://nodejs.org/download/</a></p>
+<p>3、Git 软件：下载地址<a href="http://git-scm.com/download/" target="_blank" rel="noopener">http://git-scm.com/download/</a></p>
+<h3 id="二、软件安装"><a href="#二、软件安装" class="headerlink" title="二、软件安装"></a>二、软件安装</h3><p> 1、注册GitHub账号</p>
+<p>1)Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，此处账号名作为后期个人博客的地址使用2。并且需要勾选Initialize this repository with a README。（如果没有勾选，后期要创建README文件即可）</p>
+<p>​                                </p>
+<p>2)创建一个新的repository(代码仓库), 注意，名称必须是xxx.github.io 格式，并且xxx必须是你在GitHub的用户名。</p>
+<p>3)在建好的项目右侧有个settings按钮，点击它，向下拉到GitHub Pages，你会看到那边有个网址，可以访问它。你将会惊奇的发现该项目已经被部署到网络上，能够通过外网来访问它。</p>
+<p>2.安装Node.js</p>
+<p>在node.js指定地址下载，采用最新的版本即可。</p>
+<ol start="3">
+<li>安装Git.</li>
+</ol>
+<h3 id="三、Hexo配置流程"><a href="#三、Hexo配置流程" class="headerlink" title="三、Hexo配置流程"></a>三、Hexo配置流程</h3><p>1、<strong>安装Hexo</strong></p>
+<p>Hexo 是一款基于 Node.js 的静态博客框架。Hexo 使用 Markdown 解析文章，用户在本地安装Hexo并进行写作，通过一条命令，Hexo即可利用靓丽的主题自动生成静态网页。</p>
+<p>1）新建文件夹hexo</p>
+<p>首先创建一个文件夹，用来存放Hexo模板和项目，然后进入 hexo 文件夹，鼠标右键点击Git Bash Here。 </p>
+<p>2）安装hexo基础框架</p>
+<p>// 这是安装hexo的基础框架（此处要求已经安装了node.js环境）</p>
+<p>第一步：<code>npm install hexo-cli -g</code> </p>
+<p>第二步：`hexo init blog ```</p>
+<p>它就会在当前目录下生成一个blog的文件夹，并在里面生成相关配置信息。</p>
+<p>第三步：<code>cd blog</code></p>
+<p>切换到blog目录下</p>
+<p>第四步：<code>npm install</code></p>
+<p>安装必备的组件，安装完成之后，<code>blog</code>文件夹的目录结构大致如下：</p>
+<p>// 编译生成静态页面，会在当前目录下生成一个新的叫做public的文件夹。</p>
+<p>第五步：<code>hexo g</code></p>
+<p>  ``</p>
+<p>// 启动本地服务</p>
+<p>第六步：<code>hexo s</code></p>
+<p>  ``</p>
+<p>打开链接<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000</a>，看到这样的网页就成功啦。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>2、 hexo主题设置，这里以主题yilia为例进行说明。</p>
+<p>1）安装主题（此处当前目录为blog）</p>
+<p>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
+<p>2）启用主题</p>
+<p>cd themes/yilia</p>
+<p>git pull  //获取远程内容</p>
+<p>3） 修改配置文件</p>
+<p>修改hexo目录下的_config.yml配置文件中的theme属性，将其设置为我们前面克隆下来的主体样式，此处theme: yilia</p>
+<p>4） 重启服务</p>
+<p>切换到blog目录</p>
+<p>hexo g # 重新生成静态文件</p>
+<p>hexo s # 启动本地web服务器</p>
+<p>现在打开<a href="http://localhost:4000，会看到我们已经应用了一个新的主题。" target="_blank" rel="noopener">http://localhost:4000，会看到我们已经应用了一个新的主题。</a></p>
+<h3 id="四、部署到GitHub服务器"><a href="#四、部署到GitHub服务器" class="headerlink" title="四、部署到GitHub服务器"></a>四、部署到GitHub服务器</h3><p>1、使用git命令行部署（optional）</p>
+<p>  此处我们采用git命令来完成部署的工作。</p>
+<p>1)   cd d:/hexo/blog</p>
+<p>git clone <a href="https://github.com/fang235/fang235.github.io" target="_blank" rel="noopener">https://github.com/cuihuniubi/cuihuniubi.github.io</a>  .deploy/cuihuniubi.github.io</p>
+<p>将我们之前创建的repo克隆到本地，新建一个目录叫做.deploy用于存放克隆的代码。</p>
+<p>2)   hexo generate  //生成静态文件</p>
+<p>cp -R public/* .deploy/cuihuniubi.github.io //复制文件</p>
+<p>cd .deploy/cuihuniubi.github.io //切换目录</p>
+<p>git add . //将需要提交的代码添加到暂存区</p>
+<p>git commit -m “update” //将暂存区内容提交给本地版本库</p>
+<p>git push //推送给远程服务器</p>
+<p>简单解释一下，hexo generate生成public文件夹下的新内容，然后将其拷贝至cuihuniubi.github.io的git目录下，然后使用git commit命令提交代码到cuihuniubi.github.io这个repo的master branch上。</p>
+<p>需要部署的时候，执行第三个步骤。执行过程中可能需要让你输入Github账户的用户名及密码，按照提示操作即可。</p>
+<p>2、 验证</p>
+<p>打开浏览器，输入地址：<a href="https://cuihuniubi.github.io/" target="_blank" rel="noopener">https://cuihuniubi.github.io/</a> ，就可以看到我们的博客上线了哈哈哈！！！</p>
+<h3 id="五、发布博客内容"><a href="#五、发布博客内容" class="headerlink" title="五、发布博客内容"></a>五、发布博客内容</h3><p>1、创建博客标题</p>
+<p>hexo new “CUIHUNIUBI”</p>
+<p>2、编写博客内容</p>
+<p>找到创建的md文件，使用编辑器打开，按照Markdown的格式，编写博客内容，编写完成之后，执行以下代码，将博客内容推送到远程服务器上。</p>
+<p>hexo generate  //生成静态文件</p>
+<p>cp -R public/* .deploy/cuihuniubi.github.io //复制文件</p>
+<p>cd .deploy/cuihuniubi.github.io //切换目录</p>
+<p>git add . //将需要提交的代码添加到暂存区</p>
+<p>git commit -m “update” //将暂存区内容提交给本地版本库</p>
+<p>git push //推送给远程服务器</p>
 
         </div>
 
@@ -215,7 +277,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://yoursite.com/2019/10/18/hello-world/">http://yoursite.com/2019/10/18/hello-world/</a></span>
+                        <span><a href="http://yoursite.com/2019/10/18/Github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A8%E8%BF%87%E7%A8%8B/">http://yoursite.com/2019/10/18/Github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A8%E8%BF%87%E7%A8%8B/</a></span>
                     </p>
                 
                 
@@ -248,8 +310,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2019/10/18/JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%BB%E7%BB%93/">JAVA面向对象总结</a>
+                <a class="prev" rel="prev" href="/2019/10/18/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E6%80%BB%E7%BB%93/">MySQL数据库总结</a>
             
+            
+            <a class="next" rel="next" href="/2019/10/18/JAVA%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%80%BB%E7%BB%93/">JAVA面向对象总结</a>
             
         </section>
 
